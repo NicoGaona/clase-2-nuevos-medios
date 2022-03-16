@@ -38,10 +38,10 @@ function setup() {
 }
 
 function portada() {
-    createSpan(" ¿Sabía usted que " + starWars.results[0].name + " mide " + starWars.results[0].height + " cm?").parent("contenido");
+    createSpan(" ¿Sabía usted que " + starWars.results[0].name + " pesa " + starWars.results[0].mass + " kg?").parent("contenido");
     select("a:nth-child(1)").style("color", "#FFFFFF");
 }
 function pagina() {
-    createSpan(" ¿Sabía usted que " + starWars.results[1].name + " mide " + starWars.results[1].height + " cm?").parent("contenido");
+    createSpan(" ¿Sabía usted que " + starWars.results[1].name + " pesa " + starWars.results[1].mass + " kg?").parent("contenido");
     select("a:nth-child(2)").style("color", "#FFFFFF");
 }
