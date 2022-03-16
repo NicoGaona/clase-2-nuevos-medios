@@ -38,10 +38,10 @@ function setup() {
 }
 
 function portada() {
-    createSpan(" ¿Sabía usted que " + starWars.results[0].name + " pesa " + starWars.results[0].mass + " kg?").parent("contenido");
+    createSpan(" ¿Sabía usted que " + starWars.results[0].name + " tiene los ojitos de color " + starWars.results[0].eye_color);
     select("a:nth-child(1)").style("color", "#FFFFFF");
 }
 function pagina() {
-    createSpan(" ¿Sabía usted que " + starWars.results[1].name + " pesa " + starWars.results[1].mass + " kg?").parent("contenido");
+    createSpan(" ¿Sabía usted que " + starWars.results[1].name + " tiene los ojitos de color " + starWars.results[1].eye_color);
     select("a:nth-child(2)").style("color", "#FFFFFF");
 }
