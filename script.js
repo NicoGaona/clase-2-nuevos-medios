@@ -3,11 +3,11 @@ var laHora = new Date().getHours();
 document.querySelector("#hora").innerHTML = laHora;
 var elSaludo;
 if (5 < laHora && laHora < 12) {
-    elSaludo = "Buenos días";
+    elSaludo = "Good morning";
 } else if (11 < laHora && laHora < 21) {
     elSaludo = "Buenas tardes";
 } else {
-    elSaludo = "Buenas noches";
+    elSaludo = "Bon soir";
 }
 // pregunto la ubicación
 var dondeEstas;
@@ -39,9 +39,9 @@ function setup() {
 
 function portada() {
     createSpan(" ¿Sabías que " + starWars.results[0].name + " tiene los ojitos de color " + starWars.results[0].eye_color + " y mide " + starWars.results[0].height + " cm?" + " además, su peso es " + starWars.results[0].mass + " kg.").parent("contenido");
-    select("a:nth-child(1)").style("color", "#FFFFFF");
+    select("a:nth-child(1)").style("color", "#FF0000");
 }
 function pagina() {
     createSpan(" ¿Sabías que " + starWars.results[1].name + " tiene los ojitos de color " + starWars.results[1].eye_color + " y mide " + starWars.results[1].height + " cm?" + " además, su peso es " + starWars.results[1].mass + " kg.").parent("contenido");
-    select("a:nth-child(1)").style("color", "#FFFFFF");
+    select("a:nth-child(1)").style("color", "#FF0000");
 }
